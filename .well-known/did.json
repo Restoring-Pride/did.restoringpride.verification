@@ -1,48 +1,48 @@
 {
-    "id": "did:web:restoringpride.org",
-    "@context": [
-      "https://www.w3.org/ns/did/v1",
-      {
-        "@base": "did:web:restoringpride.org"
+  "id": "did:web:restoringpride.org",
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "@base": "did:web:restoringpride.org"
+    }
+  ],
+  "service": [
+    {
+      "id": "#linkeddomains",
+      "type": "LinkedDomains",
+      "serviceEndpoint": {
+        "origins": [
+          "https://restoringpride.org/"
+        ]
       }
-    ],
-    "service": [
-      {
-        "id": "#linkeddomains",
-        "type": "LinkedDomains",
-        "serviceEndpoint": {
-          "origins": [
-            "https://restoringpride.org/"
-          ]
-        }
-      },
-      {
-        "id": "#hub",
-        "type": "IdentityHub",
-        "serviceEndpoint": {
-          "instances": [
-            "https://hub.did.msidentity.com/v1.0/174417d5-e4b0-4ed3-a0ae-ba500ff099b6"
-          ]
-        }
+    },
+    {
+      "id": "#hub",
+      "type": "IdentityHub",
+      "serviceEndpoint": {
+        "instances": [
+          "https://hub.did.msidentity.com/v1.0/174417d5-e4b0-4ed3-a0ae-ba500ff099b6"
+        ]
       }
-    ],
-    "verificationMethod": [
-      {
-        "id": "#7fbc612a44ff48c2b99ada9e10946a6fvcSigningKey-40de9",
-        "controller": "did:web:restoringpride.org",
-        "type": "EcdsaSecp256k1VerificationKey2019",
-        "publicKeyJwk": {
-          "crv": "secp256k1",
-          "kty": "EC",
-          "x": "IiRYSLWFv9bNTFQsrW3jepOJRe5tCJurvEF3834QP0U",
-          "y": "XPZmYJAaYUb1OTZngTiQwFrHkQHX7K4fRh3eP2XQqE0"
-        }
+    }
+  ],
+  "verificationMethod": [
+    {
+      "id": "#b4b0e087809c4695af74f02a9cf3a875vcSigningKey-2a2ef",
+      "controller": "did:web:restoringpride.org",
+      "type": "EcdsaSecp256k1VerificationKey2019",
+      "publicKeyJwk": {
+        "crv": "secp256k1",
+        "kty": "EC",
+        "x": "XnPfdZvOAux98la3BcapUoM2FXOdWrq8w9XU1--lA8E",
+        "y": "ND54pREqbF6WV9kO2GdG6xihr4_ZEjQWx7mfOaLCZlw"
       }
-    ],
-    "authentication": [
-      "#7fbc612a44ff48c2b99ada9e10946a6fvcSigningKey-40de9"
-    ],
-    "assertionMethod": [
-      "#7fbc612a44ff48c2b99ada9e10946a6fvcSigningKey-40de9"
-    ]
-  }
+    }
+  ],
+  "authentication": [
+    "#b4b0e087809c4695af74f02a9cf3a875vcSigningKey-2a2ef"
+  ],
+  "assertionMethod": [
+    "#b4b0e087809c4695af74f02a9cf3a875vcSigningKey-2a2ef"
+  ]
+}
